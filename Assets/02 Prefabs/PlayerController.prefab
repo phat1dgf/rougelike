@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2442643832151570896
+--- !u!1 &491031596219380662
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,43 +8,39 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4676508057037269314}
-  - component: {fileID: 7610651503950461986}
+  - component: {fileID: 2369308741800512136}
+  - component: {fileID: 6602007138393860549}
   m_Layer: 0
-  m_Name: GameRoot
+  m_Name: PlayerController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4676508057037269314
+--- !u!4 &2369308741800512136
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2442643832151570896}
+  m_GameObject: {fileID: 491031596219380662}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: -0, z: -0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7610651503950461986
+--- !u!114 &6602007138393860549
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2442643832151570896}
+  m_GameObject: {fileID: 491031596219380662}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d728591cff1a4f4eb9deeef7ba0314a, type: 3}
+  m_Script: {fileID: 11500000, guid: 0d9ad781130fd2b488f58d3838044e2f, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameRoot
-  _playerControllerPrefab: {fileID: 6602007138393860549, guid: 3a83b5ed4ebf141488abe0bdded65558, type: 3}
-  _spawnDatabase: {fileID: 11400000, guid: 16d3b548a74c17941979644f57b227c9, type: 2}
-  _audioDatabase: {fileID: 11400000, guid: 93ba0557eff021445b5b12ee8437a904, type: 2}
-  _audioPrefab: {fileID: 5143879167443589886, guid: 2bf901b1bddb96c4fa78de09e6f3d920, type: 3}
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerController

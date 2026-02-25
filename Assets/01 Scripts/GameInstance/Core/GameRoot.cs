@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.XR;
 
 public class GameRoot : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class GameRoot : MonoBehaviour
     public SaveSystem SaveSystem { get; private set; }
     public AudioSystem AudioSystem { get; private set; }
     public IEventBus GameEventBus { get; private set; }
+    public GameInputSystem InputSystem { get; private set; }
+
 
     [SerializeField] private SpawnDatabase _spawnDatabase;
     [SerializeField] private AudioDatabase _audioDatabase;
@@ -30,8 +33,16 @@ public class GameRoot : MonoBehaviour
     private void InitSystems()
     {
         GameEventBus = new GameEventBus();
+
         SpawnSystem = new SpawnSystem(_spawnDatabase);
+
         SaveSystem = new SaveSystem(new JsonFileSaveProvider());
+
         AudioSystem = new AudioSystem(_audioDatabase,_audioPrefab);
+    
+        InputSystem = new GameInputSystem();
+        InputSystem.EnableGameplay();
     }
+ 
+   
 }
